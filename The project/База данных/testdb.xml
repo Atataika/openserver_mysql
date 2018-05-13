@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.7.7
+- https://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3306
+- Время создания: Апр 25 2018 г., 13:44
+- Версия сервера: 5.6.38-log
+- Версия PHP: 5.5.38
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="testdb" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="hotels">
+                CREATE TABLE `hotels` (
+                  `hotel_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `hotel_name` tinytext NOT NULL,
+                  `holding_price` int(11) NOT NULL,
+                  `hotel_description` text NOT NULL,
+                  `date` date NOT NULL,
+                  `time` time NOT NULL,
+                  PRIMARY KEY (`hotel_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'testdb'
+    -->
+    <database name="testdb">
+        <!-- Таблица hotels -->
+        <table name="hotels">
+            <column name="hotel_id">1</column>
+            <column name="hotel_name">Номер на одного</column>
+            <column name="holding_price">500</column>
+            <column name="hotel_description">Комфортный номер на одного человека. Холодильник, душ и выход на балкон имеются в данной комплектации заказа.</column>
+            <column name="date">2018-04-21</column>
+            <column name="time">20:06:20</column>
+        </table>
+        <table name="hotels">
+            <column name="hotel_id">2</column>
+            <column name="hotel_name">Номер делюкс</column>
+            <column name="holding_price">35900</column>
+            <column name="hotel_description">Роскошный лакшери номер, расположенный на крыше нашего заведения. Красочный интерьер и превосходный внешний вид помещения оставит Вас в восторге!</column>
+            <column name="date">2018-04-21</column>
+            <column name="time">22:31:51</column>
+        </table>
+        <table name="hotels">
+            <column name="hotel_id">11</column>
+            <column name="hotel_name">Можайский техникум</column>
+            <column name="holding_price">15300</column>
+            <column name="hotel_description">МБОУ Можайский многопрофильный техникум предоставляет уникальные возможности самореализации и релаксации обучающихся студентов(помогите).</column>
+            <column name="date">2018-04-21</column>
+            <column name="time">17:27:29</column>
+        </table>
+        <table name="hotels">
+            <column name="hotel_id">18</column>
+            <column name="hotel_name">Большевязёмская гимназия</column>
+            <column name="holding_price">10000</column>
+            <column name="hotel_description">МБОУ Большевязёмская гимназия предоставляет обучение школьников на среднем уровне.</column>
+            <column name="date">2018-04-21</column>
+            <column name="time">18:35:30</column>
+        </table>
+        <table name="hotels">
+            <column name="hotel_id">31</column>
+            <column name="hotel_name">Юзер</column>
+            <column name="holding_price">900</column>
+            <column name="hotel_description">Однозначно буду пользоваться
+</column>
+            <column name="date">2018-04-21</column>
+            <column name="time">20:06:32</column>
+        </table>
+        <table name="hotels">
+            <column name="hotel_id">35</column>
+            <column name="hotel_name">354</column>
+            <column name="holding_price">2000</column>
+            <column name="hotel_description">Что тут именно нужно? Комната со всеми удобствами, желательно с уборной. </column>
+            <column name="date">2018-04-21</column>
+            <column name="time">20:18:43</column>
+        </table>
+    </database>
+</pma_xml_export>
